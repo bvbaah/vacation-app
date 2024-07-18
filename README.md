@@ -1,27 +1,54 @@
-<strong> **DO NOT DISTRIBUTE OR PUBLICLY POST SOLUTIONS TO THESE LABS. MAKE ALL FORKS OF THIS REPOSITORY WITH SOLUTION CODE PRIVATE. PLEASE REFER TO THE STUDENT CODE OF CONDUCT AND ETHICAL EXPECTATIONS FOR COLLEGE OF INFORMATION TECHNOLOGY STUDENTS FOR SPECIFICS. ** </strong>
-# WESTERN GOVERNOR UNIVERSITY 
-## D288 – BACK-END PROGRAMMING
-Welcome to Back-End Programming! This is an opportunity for students to develop object-oriented applications that can be integrated with relational databases, write code for object-oriented applications using Spring framework, and implements design patterns for object-oriented applications. 
-FOR SPECIFIC TASK INSTRUCTIONS AND REQUIREMENTS FOR THIS ASSESSMENT, PLEASE REFER TO THE COURSE PAGE.
-## BASIC INSTRUCTIONS
-For this project, you will be building your project using IntelliJ IDEA (Ultimate Edition) in a WGU-provided lab environment. You will be working with an existing MySQL database and Angular front-end, which are supplied for you in the lab environment. You will share this project to a private external GitLab repository and backup regularly. If you wish to work on it on your local machine, you will also need to download the Angular front-end application and create your own MySQL database. Use the links on your course page to install the integrated development environments (IDE), MySQL WorkBench, and IntelliJ IDEA, and pull the project from the lab environment.  
 
+# Travel Agency Booking Backend
+## Overview
+This project is a backend solution for a travel agency's vacation booking application, utilizing the Spring Framework to modernize and replace the legacy system. The backend integrates with a MySQL database and an Angular front-end provided in the lab environment.
 
-## SUPPLEMENTAL RESOURCES  
-1.	How to clone a project to IntelliJ using Git?
+## Competencies
+**Develops Object-Oriented Applications**: Integrated with relational databases.
 
-> Ensure that you have Git installed on your system and that IntelliJ is installed using [Toolbox](https://www.jetbrains.com/toolbox-app/). Make sure that you are using version 2022.3.2. Once this has been confirmed, click the clone button and use the 'IntelliJ IDEA (HTTPS)' button. This will open IntelliJ with a prompt to clone the proejct. Save it in a safe location for the directory and press clone. IntelliJ will prompt you for your credentials. Enter in your WGU Credentials and the project will be cloned onto your local machine.  
+**Writes Code**: Utilizes the Spring framework.
+Implements Design Patterns: Applied in object-oriented applications.
 
-2. How to create a branch and start Development?
+## Introduction
+The objective is to develop a Spring Framework Java backend for a travel agency's booking application. This project demonstrates skills essential for creating, customizing, and maintaining applications based on business requirements.
 
-- GitLab method
-> Press the '+' button located near your branch name. In the dropdown list, press the 'New branch' button. This will allow you to create a name for your branch. Once the branch has been named, you can select 'Create Branch' to push the branch to your repository.
+## Scenario
+The travel agency's front-end application, recently revamped using Angular and JavaScript, is encountering issues due to an outdated backend. The project aims to migrate critical functionalities from the legacy system to a modern Spring framework.
 
-- IntelliJ method
-> In IntelliJ, Go to the 'Git' button on the top toolbar. Select the new branch option and create a name for the branch. Make sure checkout branch is selected and press create. You can now add a commit message and push the new branch to the local repo.
+## Requirements
+### Setup
+**Spring Initializr Setup**: Create a new Java project with dependencies:
 
-## SUPPORT
-If you need additional support, please navigate to the course page and reach out to your course instructor.
-## FUTURE USE
-Take this opportunity to create or add to a simple resume portfolio to highlight and showcase your work for future use in career search, experience, and education!
+Spring Data JPA
 
+Rest Repositories
+
+MySQL Driver
+
+Lombok
+
+**GitLab Integration**:
+
+Connect your Java project.
+
+Commit and push changes regularly.
+
+**Project Structure**: Create packages for controllers, entities, DAO, services, and config. 
+Copy provided configuration files.
+
+## Implementation
+**Entities**: Write entity classes and enums as per the UML diagram.
+
+**DAO**: Create repository interfaces extending JpaRepository with cross-origin support.
+
+**Services**: Implement purchase data classes, response classes, and checkout service interfaces.
+
+**Validation**: Ensure input validation for the Angular front-end.
+Controllers: Implement REST controller with a post mapping for order placement.
+
+**Sample Data**: Programmatically add five sample customers, ensuring data persistence.
+
+## Testing
+**Application Testing**:
+Verify no network errors when adding data.
+Confirm data addition in MySQL Workbench.
