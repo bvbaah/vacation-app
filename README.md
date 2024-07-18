@@ -17,7 +17,9 @@ The travel agency's front-end application, recently revamped using Angular and J
 
 ## Requirements
 ### Setup
-**Spring Initializr Setup**: Create a new Java project with dependencies:
+**Spring Initializr Setup**: 
+
+Create a new Java project with dependencies:
 
 Spring Data JPA
 
@@ -27,7 +29,7 @@ MySQL Driver
 
 Lombok
 
-**GitLab Integration**:
+**Git Integration**:
 
 Connect your Java project.
 
